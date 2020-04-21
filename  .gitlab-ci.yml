@@ -1,0 +1,18 @@
+variables:
+  GIT_STRATEGY: none
+
+stages:
+  - build_stage
+
+build_stage:
+  stage: build_stage
+  environment:
+    name: staging
+  tags:
+    - stage_env
+  script:
+    - "cd ~/markup.marketplace.mplus.dev.infospice.ru"
+    - "git fetch --all"
+    - "git checkout -f master"
+    - "git clean -fd"
+    - "git pull origin master"
