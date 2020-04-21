@@ -1,0 +1,41 @@
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+
+.breadcrumbs-list a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #5c5c5c;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.breadcrumbs-list li {
+  padding: 0 10px;
+  display: inline-block;
+  position: relative;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: '/';
+    right: -6px;
+    top: 0;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}

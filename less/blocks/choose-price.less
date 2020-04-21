@@ -1,0 +1,73 @@
+.choose-price-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.choose-price {
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+.choose-price:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.choose-price .choose-price-fields {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.choose-price-fields--min {
+  margin-right: 10px;
+}
+
+.choose-price-fields--max {
+  margin-left: 15px;
+}
+
+.choose-price .choose-price-fields input[type="text"] {
+  width: 50px;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 2px;
+  height: 30px;
+  border: 2px solid #78746f;
+  color: #1c1c1c;
+}
+
+.choose-price .slider-bar {
+  position: relative;
+  height: 3px;
+  background: #cbc9c9;
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  cursor: pointer;
+}
+
+.choose-price .slider-bar .ui-slider-handle {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  background: #ebbc77;
+  border-radius: 50%;
+  border: 3px solid #e3a447;
+  outline: none;
+  transition: left 450ms;
+}
+
+.choose-price .slider-bar .ui-slider-range {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #e4a547;
+  transition: all 450ms;
+}

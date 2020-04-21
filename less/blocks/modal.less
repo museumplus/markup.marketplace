@@ -1,0 +1,226 @@
+.popup-holder {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}
+
+.modal-content {
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #fff;
+  padding: 20px 5px 20px 20px;
+}
+
+.modal-notify .modal-dialog {
+  width: 380px;
+  max-width: 100%;
+}
+
+.modal .btn-row {
+  margin-bottom: 15px;
+}
+
+.modal-title {
+  padding: 0 35px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.modal-item__image {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+}
+
+.modal-item__image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.modal-item__desc {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.modal-status-text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+@media all  and (max-width: 600px) {
+  .modal-item__image {
+    height: 140px;
+  }
+  .modal-subscribe .modal-dialog .modal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .modal-auth .modal-dialog .modal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+.modal-auth .modal-dialog {
+  width: 435px;
+  max-width: 100%;
+}
+
+.modal-auth .modal-dialog .modal-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal-subscribe .modal-dialog {
+  width: 435px;
+  max-width: 100%;
+}
+
+.modal-subscribe .modal-dialog .modal-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#subscribe_error {
+  color: #dc0101;
+}
+
+.subscribe_form label {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.subscribe_form-section {
+  margin-bottom: 15px;
+}
+
+.subscribe_form input {
+  padding: 10px;
+  width: 100%;
+}
+
+.subscribe_captcha_img-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 15px;
+}
+
+.subscribe_captcha_img {
+  width: 60%;
+  max-width: 60%;
+  min-width: 60%;
+}
+
+.subscribe_captcha_img img {
+  max-width: 100%;
+}
+
+
+.link_captcha_reload {
+  display: inline-block;
+  width: 40%;
+  max-width: 40%;
+  min-width: 40%;
+  padding-left: 20px;
+  text-align: right;
+  color: #e3a447;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.subscribe_form button {
+  outline: none;
+  border: none;
+}
+
+.subscribe_form .btn-row {
+  padding-top: 25px;
+}
+
+.subscribe_form  .row-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.subscribe_form  .row-text a {
+  color: @yellow-color;
+}
+
+.form__auth .form-group {
+  margin-bottom: 15px;
+}
+
+.form__auth label {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.form__auth input {
+  padding: 10px;
+  width: 100%;
+}
+
+.form__auth button {
+  outline: none;
+  border: none;
+}
+
+.form__auth .row-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.form__auth .row-text a {
+  color: @yellow-color;
+}
+
+.form__auth .btn-row {
+  padding-top: 25px;
+}
+
+.form__auth  label.checkbox {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modal-footer .help-block {
+  text-align: center;
+  font-size: 16px;
+}
+
+.modal-footer .social__item a {
+  background-color:@yellow-color;
+}
+
+.modal-footer .social {
+  justify-content: center;
+}
+
+.modal-footer .social__item a:hover svg {
+  fill: #fff;
+}

@@ -1,0 +1,282 @@
+.filter-box--museums .filter-details-list {
+  padding-top: 0;
+}
+.filter-label {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.filter-text-field {
+  border: 1px solid #d4cfc9;
+  width: 100%;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-family: 'Circe', Arial, sans-serif;
+}
+
+.filter-field-item {
+  margin-bottom: 18px;
+
+}
+
+.btn-submit.btn-submit--museums {
+  background: transparent;
+  border: 2px solid #e3a447;
+  padding: 13px;
+
+  &:hover {
+    background: #e3a447;
+  }
+}
+
+.filter-btn--partners {
+  display: inline-block;
+  width: 100%;
+  min-height: 1px;
+  color: #e4a547;
+  border: 1px solid #e4a547;
+  padding: 20px 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-btn--partners span {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    background-color: #e4a547;
+  }
+}
+
+.filter-btn--partners:hover {
+  background-color: #e4a547;
+  color: #000;
+}
+
+.filter-btn--partners:hover span {
+
+  &::after {
+    display: none;
+  }
+}
+
+.filter-museums-btn__row {
+  padding: 35px 0;
+}
+
+.filter-area-body-popup-active .filter-field-item {
+  width: 400px;
+  max-width: 100%;
+}
+
+.filter-area-body-popup-active .filter-museums-btn__row {
+  padding: 30px 28px;
+}
+
+.main-nav__drop--museum .alphabet-filter .alphabet-control {
+  display: inline-block;
+  min-width: 30px;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #000;
+  border: 1px solid #e4a547;
+  padding: 0 3px;
+  margin: 5px 8px 5px 0;
+
+  &:hover {
+    background-color: #e4a547;
+    color: #000;
+  }
+}
+
+.alphabet-filter .alphabet-control {
+  display: inline-block;
+  min-width: 30px;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #000;
+  border: 1px solid #e4a547;
+  padding: 0 3px;
+  margin: 5px 8px 5px 0;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #e4a547;
+    color: #000;
+  }
+
+  &--all {
+    text-transform: none;
+  }
+}
+
+.alphabet-filter--popup.alphabet-filter .alphabet-control {
+  min-width: 40px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+}
+
+.alphabet-filter--popup.alphabet-filter {
+  padding: 25px 28px 10px;
+}
+
+
+.alphabet-filter .alphabet-control.active {
+  background-color: #e4a547;
+  color: #000;
+}
+
+.alphabet-filter .alphabet-control.active {
+  background-color: #e4a547;
+  color: #000;
+}
+
+.alphabet-filter.alphabet-filter--popup {
+  display: none;
+}
+
+.filter-area-body-popup-active .alphabet-filter.alphabet-filter--popup {
+  display: block;
+}
+
+.filter-area-body-popup-active .filter-btn--partners {
+  max-width: 280px;
+}
+
+.btn-filter-opener.btn-filter-opener--museum {
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-filter-opener.btn-filter-opener--museum .btn-filter-opener__text {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.btn-filter-opener-wrapper.btn-filter-opener-wrapper--museum {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+@media all  and (max-width: 1199px) {
+  .alphabet-filter.alphabet-filter--museums {
+    display: none;
+  }
+
+  .filter-catalog-section .museums-title {
+    padding-bottom: 10px;
+  }
+}
+
+.alphabet-result-section .museum__item {
+  width: 33.3333333%;
+  min-width: 33.3333333%;
+  max-width: 33.3333333%;
+}
+
+@media all and (min-width: 640px) and (max-width: 939px) {
+  .alphabet-result-section .museum__item {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media all and (max-width: 639px) {
+  .alphabet-result-section .museum__item {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .museum__item-img {
+    height: auto;
+  }
+}
+
+.alphabet-result-section .section-title {
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.btn-row--museums.btn-row {
+  padding-top: 20px;
+}
+
+.museum__item-nav {
+  padding: 10px 0 0;
+  position: relative;
+  z-index: 2;
+}
+.museum__item-nav a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #da7427;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.museum__item-tags {
+  padding-top: 10px;
+  color: #999999;
+  z-index: 2;
+}
+
+.museum__item-tags  a {
+  color: #999999;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 12px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.museum__item-tags  a.active {
+  font-weight: 600;
+  color: #797979;
+}
+
+.museum__item-tags-list {
+  display: inline-block;
+}
+
+.museum__item-tags-title {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+}

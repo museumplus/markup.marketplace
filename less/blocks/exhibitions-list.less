@@ -1,0 +1,141 @@
+.exhibitions-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.exhibition__item {
+  transition: all .3s;
+  width: 25%;
+  margin-bottom: 0;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.exhibitions-list.events-list .exhibition__item {
+  transition: all .3s;
+  width: 33.33%;
+  margin-bottom: 0;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.exhibitions-list.events-list {
+  padding-top: 75px;
+}
+
+.exhibition__item-wrapper {
+  position: relative;
+  padding: 25px 35px 35px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  border-radius: 5px;
+  border: 1px solid #d4cfc9;
+  background-color: #fff;
+  color: #3c352d;
+  transition: all .3s;
+
+}
+
+.exhibition__item:hover .exhibition__item-wrapper {
+  box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.61);
+}
+
+.exhibition__item-img img {
+  width: 100%;
+}
+
+.exhibition__item-img {
+  margin-bottom: 18px;
+}
+
+.exhibition__item-category {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+.exhibition__item-category {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  text-decoration: none;
+  color: #be9b70;
+  flex-grow: 1;
+}
+
+.exhibition__item-top {
+  padding-bottom: 15px;
+}
+
+.exhibition__item-date {
+  color: #3c352d;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.exhibition__item-date span {
+  display: block;
+}
+
+@media all and (min-width: 941px) and (max-width: 1279px) {
+  .products-catalog-section.events-museum .exhibition__item {
+    width: 33.33%;
+  }
+}
+
+
+@media all and (min-width: 480px) and (max-width: 940px) {
+  .exhibition__item {
+    width: 50%;
+  }
+
+
+  .exhibitions-list.events-list .exhibition__item {
+    width: 50%;
+  }
+
+  .products-catalog-section.events-museum .exhibition__item {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .exhibition__item {
+    width: 100%;
+  }
+
+  .exhibitions-list.events-list .exhibition__item {
+    width: 100%;
+  }
+
+  .products-catalog-section.events-museum .exhibition__item {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .exhibitions-list.events-list {
+    padding-top: 30px;
+  }
+}
+
+.exhibition__item-museum {
+  position: relative;
+  z-index: 1;
+  color: #e4a547;
+  text-decoration: underline;
+  margin-top: 8px;
+  font-size: 15px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

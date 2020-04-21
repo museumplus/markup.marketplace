@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum + Marketplace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="facebook-f-brands" viewBox="0 0 264 512">
+        <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+    </symbol>
+    <symbol id="google-plus-g-brands" viewBox="0 0 640 512">
+        <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path>
+    </symbol>
+    <symbol id="heart-regular" viewBox="0 0 512 512">
+        <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+    </symbol>
+    <symbol id="instagram-brands" viewBox="0 0 448 512">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+    </symbol>
+    <symbol id="odnoklassniki-brands" viewBox="0 0 320 512">
+        <path d="M275.1 334c-27.4 17.4-65.1 24.3-90 26.9l20.9 20.6 76.3 76.3c27.9 28.6-17.5 73.3-45.7 45.7-19.1-19.4-47.1-47.4-76.3-76.6L84 503.4c-28.2 27.5-73.6-17.6-45.4-45.7 19.4-19.4 47.1-47.4 76.3-76.3l20.6-20.6c-24.6-2.6-62.9-9.1-90.6-26.9-32.6-21-46.9-33.3-34.3-59 7.4-14.6 27.7-26.9 54.6-5.7 0 0 36.3 28.9 94.9 28.9s94.9-28.9 94.9-28.9c26.9-21.1 47.1-8.9 54.6 5.7 12.4 25.7-1.9 38-34.5 59.1zM30.3 129.7C30.3 58 88.6 0 160 0s129.7 58 129.7 129.7c0 71.4-58.3 129.4-129.7 129.4s-129.7-58-129.7-129.4zm66 0c0 35.1 28.6 63.7 63.7 63.7s63.7-28.6 63.7-63.7c0-35.4-28.6-64-63.7-64s-63.7 28.6-63.7 64z"></path>
+    </symbol>
+    <symbol id="search-solid" viewBox="0 0 50 50">
+        <path style=" " d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z "/>
+    </symbol>
+    <symbol id="shopping-bag-solid" viewBox="0 0 448 512">
+        <path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path>
+    </symbol>
+    <symbol id="telegram-plane-brands" viewBox="0 0 448 512">
+        <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+    </symbol>
+    <symbol id="tripadvisor-brands" viewBox="0 0 576 512">
+        <path d="M166.4 280.521c0 13.236-10.73 23.966-23.966 23.966s-23.966-10.73-23.966-23.966 10.73-23.966 23.966-23.966 23.966 10.729 23.966 23.966zm264.962-23.956c-13.23 0-23.956 10.725-23.956 23.956 0 13.23 10.725 23.956 23.956 23.956 13.23 0 23.956-10.725 23.956-23.956-.001-13.231-10.726-23.956-23.956-23.956zm89.388 139.49c-62.667 49.104-153.276 38.109-202.379-24.559l-30.979 46.325-30.683-45.939c-48.277 60.39-135.622 71.891-197.885 26.055-64.058-47.158-77.759-137.316-30.601-201.374A186.762 186.762 0 0 0 0 139.416l90.286-.05a358.48 358.48 0 0 1 197.065-54.03 350.382 350.382 0 0 1 192.181 53.349l96.218.074a185.713 185.713 0 0 0-28.352 57.649c46.793 62.747 34.964 151.37-26.648 199.647zM259.366 281.761c-.007-63.557-51.535-115.075-115.092-115.068C80.717 166.7 29.2 218.228 29.206 281.785c.007 63.557 51.535 115.075 115.092 115.068 63.513-.075 114.984-51.539 115.068-115.052v-.04zm28.591-10.455c5.433-73.44 65.51-130.884 139.12-133.022a339.146 339.146 0 0 0-139.727-27.812 356.31 356.31 0 0 0-140.164 27.253c74.344 1.582 135.299 59.424 140.771 133.581zm251.706-28.767c-21.992-59.634-88.162-90.148-147.795-68.157-59.634 21.992-90.148 88.162-68.157 147.795v.032c22.038 59.607 88.198 90.091 147.827 68.113 59.615-22.004 90.113-88.162 68.125-147.783zm-326.039 37.975v.115c-.057 39.328-31.986 71.163-71.314 71.106-39.328-.057-71.163-31.986-71.106-71.314.057-39.328 31.986-71.163 71.314-71.106 39.259.116 71.042 31.94 71.106 71.199zm-24.512 0v-.084c-.051-25.784-20.994-46.645-46.778-46.594-25.784.051-46.645 20.994-46.594 46.777.051 25.784 20.994 46.645 46.777 46.594 25.726-.113 46.537-20.968 46.595-46.693zm313.423 0v.048c-.02 39.328-31.918 71.194-71.247 71.173s-71.194-31.918-71.173-71.247c.02-39.328 31.918-71.194 71.247-71.173 39.29.066 71.121 31.909 71.173 71.199zm-24.504-.008c-.009-25.784-20.918-46.679-46.702-46.67-25.784.009-46.679 20.918-46.67 46.702.009 25.784 20.918 46.678 46.702 46.67 25.765-.046 46.636-20.928 46.67-46.693v-.009z"></path>
+    </symbol>
+    <symbol id="twitter-brands" viewBox="0 0 512 512">
+        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+    </symbol>
+    <symbol id="user-regular" viewBox="0 0 448 512">
+        <path d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"></path>
+    </symbol>
+    <symbol id="vk-brands" viewBox="0 0 576 512">
+        <path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path>
+    </symbol>
+    <symbol id="youtube-brands" viewBox="0 0 576 512">
+        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+    </symbol>
+    <symbol id="call" viewBox="0 0 16.877 16.877">
+        <path d="M5.301,5.587L1.404,1.688c0.503-0.503,1.005-1.007,1.509-1.511C3.146-0.056,3.522-0.06,3.756,0.17l3.036,3.039
+            c0.232,0.232,0.232,0.614-0.003,0.848L6.124,4.721L5.505,5.34C5.429,5.417,5.36,5.499,5.301,5.587z M8.507,11.938
+            c-0.638-0.549-1.25-1.132-1.844-1.725C6.07,9.616,5.489,9.006,4.939,8.365c-0.45-0.52-0.538-1.273-0.303-1.907L0.636,2.457
+            c-0.931,0.957-0.812,3.33,0.208,5.415c0.438,0.902,1.006,1.716,1.593,2.49c0.586,0.768,1.229,1.494,1.906,2.176
+            c0.679,0.681,1.401,1.327,2.171,1.913c0.774,0.589,1.59,1.153,2.486,1.59c2.088,1.019,4.462,1.131,5.418,0.199l-4.001-4.001
+            C9.783,12.474,9.029,12.387,8.507,11.938z M16.702,13.119l-3.036-3.037c-0.233-0.23-0.615-0.23-0.848,0.003h-0.002l-0.667,0.666
+            l-0.615,0.618c-0.076,0.076-0.159,0.143-0.247,0.205l3.896,3.898c0.504-0.505,1.007-1.007,1.512-1.51
+            C16.93,13.729,16.935,13.352,16.702,13.119z"/>
+    </symbol>
+    <symbol id="settings" viewBox="0 0 32 32">
+        <path d="M 13.03125 4 C 11.925781 4 11 4.925781 11 6.03125 L 11 7 L 4 7 L 4 9 L 11 9 L 11 9.96875 C 11 11.066406 11.90625 11.984375 13 12 C 13.011719 12 13.019531 12 13.03125 12 L 13.9375 12.03125 L 13.96875 12.03125 C 15.074219 12.03125 16 11.105469 16 10 L 16 9.03125 L 28 9 L 28 7 L 16 7.03125 L 16 6.0625 C 16 4.964844 15.089844 4.046875 14 4.03125 L 13.96875 4.03125 L 13.0625 4 Z M 13 6 L 13.03125 6 L 13.9375 6.03125 L 13.96875 6.03125 C 13.992188 6.03125 14 6.039063 14 6.0625 L 14 10 C 14 10.011719 14.003906 10.027344 14 10.03125 L 13.96875 10.03125 L 13.0625 10 L 13.03125 10 C 13.007813 10 13 9.992188 13 9.96875 L 13 6.03125 C 13 6.019531 12.996094 6.003906 13 6 Z M 21.03125 12 C 19.925781 12 19 12.925781 19 14.03125 L 19 15 L 4 15 L 4 17 L 19 17 L 19 17.96875 C 19 19.066406 19.90625 19.984375 21 20 C 21.011719 20 21.019531 20 21.03125 20 L 21.9375 20.03125 L 21.96875 20.03125 C 23.074219 20.03125 24 19.105469 24 18 L 24 17.03125 L 28 17 L 28 15 L 24 15.03125 L 24 14.0625 C 24 12.964844 23.09375 12.046875 22 12.03125 L 21.96875 12.03125 L 21.0625 12 Z M 21 14 L 21.03125 14 L 21.9375 14.03125 L 21.96875 14.03125 C 21.992188 14.03125 22 14.039063 22 14.0625 L 22 18 C 22 18.011719 22.003906 18.027344 22 18.03125 L 21.96875 18.03125 L 21.0625 18 L 21.03125 18 C 21.007813 18 21 17.992188 21 17.96875 L 21 14.03125 C 21 14.019531 20.996094 14.003906 21 14 Z M 9.03125 20 C 7.925781 20 7 20.925781 7 22.03125 L 7 23 L 4 23 L 4 25 L 7 25 L 7 25.96875 C 7 27.066406 7.90625 27.984375 9 28 C 9.011719 28 9.019531 28 9.03125 28 L 9.9375 28.03125 L 9.96875 28.03125 C 11.074219 28.03125 12 27.105469 12 26 L 12 25.03125 L 28 25 L 28 23 L 12 23.03125 L 12 22.0625 C 12 20.964844 11.09375 20.046875 10 20.03125 L 9.96875 20.03125 L 9.0625 20 Z M 9 22 L 9.03125 22 L 9.9375 22.03125 L 9.96875 22.03125 C 9.992188 22.03125 10 22.039063 10 22.0625 L 10 26 C 10 26.011719 10.003906 26.027344 10 26.03125 L 9.96875 26.03125 L 9.0625 26 L 9.03125 26 C 9.007813 26 9 25.992188 9 25.96875 L 9 22.03125 C 9 22.019531 8.996094 22.003906 9 22 Z "/>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 471.701 471.701">
+        <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+		c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+		l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+		C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+		s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+		c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+		C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+    </symbol>
+    <symbol id="heart-active" viewBox="0 0 492.719 492.719">
+        <path d="M492.719,166.008c0-73.486-59.573-133.056-133.059-133.056c-47.985,0-89.891,25.484-113.302,63.569
+			c-23.408-38.085-65.332-63.569-113.316-63.569C59.556,32.952,0,92.522,0,166.008c0,40.009,17.729,75.803,45.671,100.178
+			l188.545,188.553c3.22,3.22,7.587,5.029,12.142,5.029c4.555,0,8.922-1.809,12.142-5.029l188.545-188.553
+			C474.988,241.811,492.719,206.017,492.719,166.008z"/>
+    </symbol>
+</svg>
+
+    <div class="content-width">
+        <header class="main-header">
+            <div class="main-header__wrapper">
+                <div class="logo"><a href="">Museum<span>+</span>Marketplace</a></div>
+                <div class="header-btn-box">
+                    <a class="header-btn" href="">+ <span>Стать партнером</span></a>
+                </div>
+                <div class="main-header__controls">
+                    <a class="main-header__tel" href="tel:+74951112233">
+                        <svg viewBox="0 0 348.077 348.077" width="30" height="30">
+                            <use xlink:href="#call"></use>
+                        </svg>
+                        8 (495) 111 22 33</a>
+                    <a href="" class="main-header__language">EN</a>
+                    <button class="main-nav__toggle main-nav__toggle--tablet"></button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item tablets-catalog-opener main-nav__item--catalog">
+                        <a class="main-nav__item-link main-nav__item-link--catalog" href="">Каталог</a>
+                        <div class="main-nav__drop main-nav__drop--catalog">
+                            <div class="main-nav__column main-nav__drop-holder">
+                                <ul class="main-nav__drop-list">
+                                    <li class="item-hover">
+                                        <div class="item">
+                                            <a href="">Книги</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li>
+                                                <a href="">Издания к выставкам</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Издания к выставкам</a></li>
+                                                    <li><a>Издания к выставкам</a></li>
+                                                    <li><a>Издания</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Каталоги коллекций</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Издания к выставкам</a></li>
+                                                    <li><a>Пункт5</a></li>
+                                                    <li><a>Издания к выставкам</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Научные издания</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Для дома</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li>
+                                                <a href="">Посуда</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт1</a></li>
+                                                    <li><a>Пункт2</a></li>
+                                                    <li><a>Пункт3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Подушки</a></li>
+                                            <li>
+                                                <a href="">Электроника</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт1</a></li>
+                                                    <li><a>Пункт2</a></li>
+                                                    <li><a>Пункт3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Детям</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li><a href="">Книги</a></li>
+                                            <li>
+                                                <a href="">Творчество</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт1</a></li>
+                                                    <li><a>Пункт2</a></li>
+                                                    <li><a>Пункт3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Игрушки</a></li>
+                                            <li><a href="">Одежда</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Сувениры</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li>
+                                                <a href="">Календари</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт1</a></li>
+                                                    <li><a>Пункт2</a></li>
+                                                    <li><a>Пункт3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Канцелярия</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт4</a></li>
+                                                    <li><a>Пункт5</a></li>
+                                                    <li><a>Пункт6</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Игры</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт7</a></li>
+                                                    <li><a>Пункт8</a></li>
+                                                    <li><a>Пункт9</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Закладки</a>
+                                                <ul class="main-nav__sub-item main-nav__sub-item--second">
+                                                    <li><a>Пункт1</a></li>
+                                                    <li><a>Пункт2</a></li>
+                                                    <li><a>Пункт3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Магниты</a></li>
+                                            <li><a href="">Открытки</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Аксессуары</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li><a href="">Украшения</a></li>
+                                            <li><a href="">Чехлы для телефонов</a></li>
+                                            <li><a href="">Зеркала</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Текстиль</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li><a href="">Сумки</a></li>
+                                            <li><a href="">Футболки</a></li>
+                                            <li><a href="">Одежда</a></li>
+                                            <li><a href="">Платки</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Постеры</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li><a href="">На бумаге</a></li>
+                                            <li><a href="">В конверте</a></li>
+                                            <li><a href="">На холсте</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Мультимедия</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li><a href="">DVD-фильмы</a></li>
+                                            <li><a href="">Обучающие прораммы</a></li>
+                                            <li><a href="">VR</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Печать на заказ</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item main-nav__sub-item--first">
+                                            <li>новая услуга</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="">Подарки</a>
+                                        </div>
+                                        <ul class="main-nav__sub-item">
+                                            <li><a href="">Для него</a></li>
+                                            <li><a href="">Для нее</a></li>
+                                            <li><a href="">Ребёнку</a></li>
+                                            <li><a href="">Родителям</a></li>
+                                            <li><a href="">К Новому году</a></li>
+                                            <li><a href="">К 8 марта</a></li>
+                                            <li><a href="">Эксклюзивные</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-nav__column main-nav__icon-menu">
+                                <div class="main-nav__promo">
+                                    <a class="main-nav__promo-item" href="">
+                                        <div class="main-nav__promo-item-img">
+                                            <img src="/static/img/category/1.jpg" alt="">
+                                        </div>
+                                        <div class="main-nav__promo-item-title">Новинки</div>
+                                    </a>
+                                    <a class="main-nav__promo-item" href="">
+                                        <div class="main-nav__promo-item-img">
+                                            <img src="/static/img/category/2.jpg" alt="">
+                                        </div>
+                                        <div class="main-nav__promo-item-title">Акции</div>
+                                    </a>
+                                    <a class="main-nav__promo-item" href="">
+                                        <div class="main-nav__promo-item-img">
+                                            <img src="/static/img/category/3.jpg" alt="">
+                                        </div>
+                                        <div class="main-nav__promo-item-title">К выставкам</div>
+                                    </a>
+                                    <a class="main-nav__promo-item" href="">
+                                        <div class="main-nav__promo-item-img">
+                                            <img src="/static/img/category/4.jpg" alt="">
+                                        </div>
+                                        <div class="main-nav__promo-item-title">Рекомендуем</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-nav__item main-nav__item--museum">
+                        <a class="main-nav__item-link" href="">Музеи</a>
+                        <div class="main-nav__drop main-nav__drop--museum">
+                            <div class="alphabet-filter">
+                                <a class="alphabet-control active" href="">Все</a>
+                                <a class="alphabet-control" href="">А</a>
+                                <a class="alphabet-control" href="">Б</a>
+                                <a class="alphabet-control" href="">В</a>
+                                <a class="alphabet-control" href="">Г</a>
+                                <a class="alphabet-control" href="">Д</a>
+                                <a class="alphabet-control" href="">Е</a>
+                                <a class="alphabet-control" href="">Ж</a>
+                                <a class="alphabet-control" href="">З</a>
+                                <a class="alphabet-control" href="">И</a>
+                                <a class="alphabet-control" href="">К</a>
+                                <a class="alphabet-control" href="">Л</a>
+                                <a class="alphabet-control" href="">М</a>
+                                <a class="alphabet-control" href="">Н</a>
+                                <a class="alphabet-control" href="">О</a>
+                                <a class="alphabet-control" href="">П</a>
+                                <a class="alphabet-control" href="">Р</a>
+                                <a class="alphabet-control" href="">С</a>
+                                <a class="alphabet-control" href="">Т</a>
+                                <a class="alphabet-control" href="">У</a>
+                                <a class="alphabet-control" href="">Ф</a>
+                                <a class="alphabet-control" href="">Х</a>
+                                <a class="alphabet-control" href="">Ц</a>
+                                <a class="alphabet-control" href="">Ч</a>
+                                <a class="alphabet-control" href="">Ш</a>
+                                <a class="alphabet-control" href="">Щ</a>
+                                <a class="alphabet-control" href="">Э</a>
+                                <a class="alphabet-control" href="">Ю</a>
+                                <a class="alphabet-control" href="">Я</a>
+                            </div>
+                            <div class="alphabet-filter-result">
+                                <ul class="search-alphabet">
+                                    <li class="search-alphabet-item">
+                                        <span class="item">A</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Авангардной живописи музей</a></li>
+                                            <li><a href="#">Альтернативной истории</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Б</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">В</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Г</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Д</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Е</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="alphabet-filter__btn-box">
+                                    <a class="btn alphabet-filter__btn" href="">+ <span>Стать партнером</span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-nav__item main-nav__item--galery">
+                        <a class="main-nav__item-link" href="">Галерея</a>
+                        <div class="main-nav__drop main-nav__drop--museum main-nav__drop--galery">
+                            <div class="alphabet-filter">
+                                <a class="alphabet-control active" href="">Все</a>
+                                <a class="alphabet-control" href="">А</a>
+                                <a class="alphabet-control" href="">Б</a>
+                                <a class="alphabet-control" href="">В</a>
+                                <a class="alphabet-control" href="">Г</a>
+                                <a class="alphabet-control" href="">Д</a>
+                                <a class="alphabet-control" href="">Е</a>
+                                <a class="alphabet-control" href="">Ж</a>
+                                <a class="alphabet-control" href="">З</a>
+                                <a class="alphabet-control" href="">И</a>
+                                <a class="alphabet-control" href="">К</a>
+                                <a class="alphabet-control" href="">Л</a>
+                                <a class="alphabet-control" href="">М</a>
+                                <a class="alphabet-control" href="">Н</a>
+                                <a class="alphabet-control" href="">О</a>
+                                <a class="alphabet-control" href="">П</a>
+                                <a class="alphabet-control" href="">Р</a>
+                                <a class="alphabet-control" href="">С</a>
+                                <a class="alphabet-control" href="">Т</a>
+                                <a class="alphabet-control" href="">У</a>
+                                <a class="alphabet-control" href="">Ф</a>
+                                <a class="alphabet-control" href="">Х</a>
+                                <a class="alphabet-control" href="">Ц</a>
+                                <a class="alphabet-control" href="">Ч</a>
+                                <a class="alphabet-control" href="">Ш</a>
+                                <a class="alphabet-control" href="">Щ</a>
+                                <a class="alphabet-control" href="">Э</a>
+                                <a class="alphabet-control" href="">Ю</a>
+                                <a class="alphabet-control" href="">Я</a>
+                            </div>
+                            <div class="alphabet-filter-result">
+                                <ul class="search-alphabet">
+                                    <li class="search-alphabet-item">
+                                        <span class="item">A</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Авангардной живописи музей</a></li>
+                                            <li><a href="#">Альтернативной истории</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Б</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">В</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Г</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Д</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Е</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="alphabet-filter__btn-box">
+                                    <a class="btn alphabet-filter__btn" href="">+ <span>Стать партнером</span></a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="main-nav__item main-nav__item--partners">
+                        <a class="main-nav__item-link" href="">Партнеры</a>
+                        <div class="main-nav__drop main-nav__drop--museum main-nav__drop--partners">
+                            <div class="alphabet-filter">
+                                <a class="alphabet-control active" href="">Все</a>
+                                <a class="alphabet-control" href="">А</a>
+                                <a class="alphabet-control" href="">Б</a>
+                                <a class="alphabet-control" href="">В</a>
+                                <a class="alphabet-control" href="">Г</a>
+                                <a class="alphabet-control" href="">Д</a>
+                                <a class="alphabet-control" href="">Е</a>
+                                <a class="alphabet-control" href="">Ж</a>
+                                <a class="alphabet-control" href="">З</a>
+                                <a class="alphabet-control" href="">И</a>
+                                <a class="alphabet-control" href="">К</a>
+                                <a class="alphabet-control" href="">Л</a>
+                                <a class="alphabet-control" href="">М</a>
+                                <a class="alphabet-control" href="">Н</a>
+                                <a class="alphabet-control" href="">О</a>
+                                <a class="alphabet-control" href="">П</a>
+                                <a class="alphabet-control" href="">Р</a>
+                                <a class="alphabet-control" href="">С</a>
+                                <a class="alphabet-control" href="">Т</a>
+                                <a class="alphabet-control" href="">У</a>
+                                <a class="alphabet-control" href="">Ф</a>
+                                <a class="alphabet-control" href="">Х</a>
+                                <a class="alphabet-control" href="">Ц</a>
+                                <a class="alphabet-control" href="">Ч</a>
+                                <a class="alphabet-control" href="">Ш</a>
+                                <a class="alphabet-control" href="">Щ</a>
+                                <a class="alphabet-control" href="">Э</a>
+                                <a class="alphabet-control" href="">Ю</a>
+                                <a class="alphabet-control" href="">Я</a>
+                            </div>
+                            <div class="alphabet-filter-result">
+                                <ul class="search-alphabet">
+                                    <li class="search-alphabet-item">
+                                        <span class="item">A</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Авангардной живописи музей</a></li>
+                                            <li><a href="#">Альтернативной истории</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Б</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">В</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Г</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Д</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="search-alphabet-item">
+                                        <span class="item">Е</span>
+                                        <ul class="search-alphabet-sub">
+                                            <li><a href="#">Бюрократии музей</a></li>
+                                            <li><a href="#">Белорусских искусств музей</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="alphabet-filter__btn-box">
+                                    <a class="btn alphabet-filter__btn" href="">+ <span>Стать партнером</span></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--user-block">
+                        <a class="main-nav__item-link fancybox" href="#auth">
+                            <span>
+                                <svg viewBox="0 0 100 100" width="30" height="30">
+                                    <use xlink:href="#user-regular"></use>
+                                </svg>
+                            </span>
+                            Петров-Водкин-Сибиряк М.
+                            <span class="main-nav__item-alert">!</span>
+                        </a>
+                        <div class="main-nav__drop main-nav__drop--user">
+                            <ul class="main-nav__drop-list">
+                                <li>
+                                    <div class="item">
+                                        <a href="">Личная информация</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <a href="">Заказы</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <a href="">Подписка</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <a href="">Выход</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="main-nav__item  main-nav__item--favorites">
+                        <a class="main-nav__item-link" href="" title="Избранное">
+                            <span>
+                                <svg viewBox="0 0 100 100" width="30" height="30">
+                                    <use xlink:href="#heart-regular"></use>
+                                </svg>
+                            </span>
+                            Избранное
+                            <span class="main-nav__item-alert">32</span>
+                        </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--cart">
+                        <a class="main-nav__item-link" href="" title="Корзина">
+                            <span>
+                                <svg viewBox="0 0 100 100" width="30" height="30">
+                                    <use xlink:href="#shopping-bag-solid"></use>
+                                </svg>
+                            </span>
+                            Корзина
+                            <span class="main-nav__item-alert">8</span>
+                        </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--search">
+                        <form action="#" class="search-form">
+                            <a href="#" class="search-form-opener">
+                                Что ищем?
+                                <svg viewBox="0 0 100 100" width="30" height="30">
+                                    <use xlink:href="#search-solid"></use>
+                                </svg>
+                            </a>
+                            <div class="search-box">
+                                <input type="search" id="search" placeholder="Что ищем?">
+                                <button class="search-icon">
+                                    <svg viewBox="0 0 100 100" width="30" height="30">
+                                        <use xlink:href="#search-solid"></use>
+                                    </svg>
+                                    Найти
+                                </button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+
+                <div class="body-popup tablets-catalog-body-popup">
+                    <div class="body-popup-heading">
+                        <strong class="body-popup-title">Каталог</strong>
+                        <a href="#" class="body-popup-close">Закрыть</a>
+                    </div>
+                    <div class="popup-catalog-title">Каталог</div>
+                    <div class="body-popup-scrollable">
+                        <div class="body-popup-scrollable-holder">
+                            <div class="tablets-catalog-menu">
+                                <ul class="tablets-catalog-menu-list">
+                                    <li>
+                                        <a href="#">Книги</a>
+                                        <a href="#" class="mobile-opener">Далее</a>
+                                        <ul class="tablets-catalog-menu-list">
+                                            <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                            <li>
+                                                <a href="#">Издания к выставкам</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Издания к выставкам</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Издания к выставкам</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Издания</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Каталоги коллекций</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Издания к выставкам</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Издания к выставкам</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Научные издания</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Для дома</a>
+                                        <a href="#" class="mobile-opener">Далее</a>
+                                        <ul class="tablets-catalog-menu-list">
+                                            <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                            <li>
+                                                <a href="#">Посуда</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт3</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Подушки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Электроника</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт3</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Детям</a>
+                                        <a href="#" class="mobile-opener">Далее</a>
+                                        <ul class="tablets-catalog-menu-list">
+                                            <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                            <li><a href="">Книги</a></li>
+                                            <li>
+                                                <a href="#">Творчество</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт3</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Игрушки</a></li>
+                                            <li><a href="">Одежда</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Сувениры</a>
+                                        <a href="#" class="mobile-opener">Далее</a>
+                                        <ul class="tablets-catalog-menu-list">
+                                            <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                            <li>
+                                                <a href="#">Календари</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт3</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Канцелярия</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт6</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Игры</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт9</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Закладки</a>
+                                                <a href="#" class="mobile-opener">Далее</a>
+                                                <ul class="tablets-catalog-menu-list">
+                                                    <li class="btn-back-item"><a href="#" class="btn-multilevelmenu-back">Назад</a></li>
+                                                    <li>
+                                                        <a href="#">Пункт1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пункт3</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Магниты</a></li>
+                                            <li><a href="">Открытки</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu">
+                        <ul>
+                            <li>
+                                <a href="">Музеи</a>
+                            </li>
+                            <li>
+                                <a href="">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="">Партнеры</a>
+                            </li>
+                            <li>
+                                <a href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="">Контактная информация</a>
+                            </li>
+                        </ul>
+                        <div class="mobile-menu-btn-box">
+                            <a class="mobile-menu-btn btn" href="">+ <span>Стать партнером</span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-content-area">
+                <div class="breadcrumbs">
+                    <div class="wrapper">
+                        <ul class="breadcrumbs-list">
+                            <li><a href="#">Главная</a></li>
+                            <li>Музеи</li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var partnersSetting = {
+                    	debug: true,
+						debugUrl: 'http://www.optim.museum-marketplace.mediaspice.ru/museum/',
+
+						titleText: "Музеи",
+						itemsInPage: 20,
+						startLetter: 'а',
+						// checkFilterInCity: false,
+						checkFilterInCity: true,
+
+						pageLoadingData: 'Подождите, идет загрузка данных...',
+						pageTextErrorLoadingData: '!!Произошла ошибка загрузки. Обратитесь к разработчикам.',
+						// pageSearchEmpty: 'По вашему запросу ничего не найдено',
+						pageSearchEmpty: 'no search',
+                        pageTitleTags: 'tags',
+
+						filterSearchText: 'Search museum',
+						filterTitle: 'Filter',
+						filterName: 'Name',
+						filterCountry: 'Country',
+						filterCity: 'City',
+						filterCheckedCountry: 'Selected country',
+						filterCheckedCity: 'Selected city',
+						filterClose: 'Close',
+						filterShow: 'Show',
+						filterClearAll: 'Clear all',
+						// filterSearchText: 'Найти музей',
+						// filterTitle: 'Фильтр',
+						// filterName: 'Название',
+						// filterCountry: 'Страна',
+						// filterCity: 'Город',
+						// filterCheckedCity: 'Выберите город',
+						// filterClose: 'Закрыть',
+						// filterShow: 'Показать',
+						// filterClearAll: 'Сбросить все',
+						// 'checkFilterInCity': false
+
+						letterAll: 'Все',
+
+						partnerButton: '+ <span>Стать партнером</span>',
+						partnerShow: true,
+						partnerLink: '/form-partner.php',
+
+                        test: 1
+                    }
+                </script>
+                <div id="app" class="catalog-section"></div>
+                <!-- built files will be auto injected -->
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container main-footer__wrapper">
+            <div class="main-footer__column">
+                <ul class="main-footer__nav">
+                    <li><a href="">О магазине</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контактная информация</a></li>
+                    <li><a href="">Коммерческим организациям</a></li>
+                </ul>
+            </div>
+            <div class="main-footer__column">
+                <ul class="main-footer__callback-action">
+                    <li><a href="">Перезвоните мне</a></li>
+                    <li><a href="">Форма обратной связи</a></li>
+                </ul>
+                <ul class="social  social--darken">
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#twitter-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#vk-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#facebook-f-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#google-plus-g-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#tripadvisor-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#youtube-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#instagram-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#odnoklassniki-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="">
+                            <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                <use xlink:href="#telegram-plane-brands"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__column">
+                <ul class="main-footer__nav  main-footer__nav--right">
+                    <li><a href="">Публичная оферта</a></li>
+                    <li><a href="">Подписка на рассылку</a></li>
+                    <li><a href="">Политика конфиденциальности</a></li>
+                </ul>
+                <p class="main-footer__copyright">Вся текстовая информация, графические изображения, аудио и видеоматериалы, размещенные на интернет-сайте Интернет-магазина, являются собственностью Продавца и/или его поставщиков и производителей Товара. Все права защищены.
+                </p>
+            </div>
+        </div>
+        <div class="main-footer__copyright">© 2018 <a href="">ООО «Музей Плюс»</a>, разработка
+        </div>
+    </footer>
+
+    <div class="popup-holder">
+        <div class="modal modal-cart modal-notify notify-success" id="modal-add-cart" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" >Товар добавлен в корзину!</h4>
+                    </div>
+                    <div class="modal-body">
+
+
+                                    <div class="modal-item__image">
+                                        <img src="/static/img/products/1.png" alt="">
+                                    </div>
+
+
+                                    <div class="modal-item__desc">Подставка под горячее например блинчики «Голландские изразцы»
+                                        а вот и третья строчка!</div>
+
+                        <p class="modal-status-text">В вашей корзине<br/>
+                            <strong class="basket__value">0</strong> товара на сумму <strong>7560&nbsp;&#8381;</strong></p>
+
+                        <div class="btn-row">
+                            <a class="btn btn-green modal-item-btn" href="">
+                                Продолжить покупки
+                            </a>
+                        </div>
+                        <div class="btn-row">
+                            <a href="cart.html" class="btn btn-border-green modal-item-btn">перейти в корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-auth" id="auth" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" ><span>АВТОРИЗАЦИЯ</span></h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <form action="POST" class="form__auth">
+                            <div class="form-group">
+                                <label for="login" class="control-label">E-mail</label>
+                                <input type="text" id="login" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass" class="control-label">Пароль</label>
+                                <input type="password" id="pass" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox-ico"></span>
+                                    <span class="label-text">Запомнить меня</span>
+                                </label>
+                            </div>
+                            <div class="submit-group text-center">
+                                <button type="button" class="btn btn-green">ВОЙТИ</button>
+                            </div>
+                            <div class="row-text">
+                                <div class="text-left"><a href="recovery.html">Я забыл пароль!</a></div>
+                                <div class="text-right"><a href="registration.html">Регистрация</a></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="help-block">Вход с использованием вашего<br>
+                            аккаунта в социальных сетях</p>
+                        <div class="social-icons">
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="">
+                                        <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                            <use xlink:href="#twitter-brands"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="">
+                                        <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                            <use xlink:href="#vk-brands"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="">
+                                        <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                            <use xlink:href="#facebook-f-brands"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="">
+                                        <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                            <use xlink:href="#youtube-brands"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="">
+                                        <svg viewBox="0 0 100 100" width="26" height="26" class="social__icon">
+                                            <use xlink:href="#instagram-brands"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-subscribe" id="subscribe_modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Сообщить о поступлении</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="subscribe_form" id="subscribe_form">
+                            <div class="subscribe_error" id="subscribe_error">Не корректный емайл.</div>
+                            <div class="subscribe_form-section">
+                                <label for="subscribe_fio">Имя</label>
+                                <input type="text" size="15" value="" maxlength="50" placeholder="Укажите свое имя"
+                                       id="subscribe_fio" class="input_text_style">
+                            </div>
+                            <div class="subscribe_form-section">
+                                <label for="subscribe_email">Email</label>
+                                <input type="text" size="15" value="" maxlength="50" placeholder="Укажите Ваш email"
+                                       id="subscribe_email" class="input_text_style required">
+                            </div>
+                            <div class="subscribe_form-section">
+                                <input type="hidden" value="082b81580c77c21f41048db1b169416a" id="subscribe_captcha_sid"
+                                       name="popup_captcha_sid">
+                                <label for="subscribe_captcha_word">Защита от роботов</label>
+                                <div class="subscribe_captcha_img-box">
+                                    <div class="subscribe_captcha_img">
+                                        <img width="180" height="40" alt="CAPTCHA" onclick="captchaReload()"
+                                         id="subscribe_captcha_img"
+                                         src="http://sp.yakus.ru/bitrix/tools/captcha.php?captcha_sid=082b81580c77c21f41048db1b169416a">
+                                    </div>
+                                    <a class="link_captcha_reload" onclick="captchaReload()"
+                                       href="javascript:void(0)">Обновить</a>
+                                </div>
+                                <input type="text" size="15" value="" maxlength="50" placeholder="Введите слово на картинке"
+                                   id="subscribe_captcha_word" name="subscribe_captcha_word" class="input_text_style">
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn btn-green">Сообщить</button>
+                            </div>
+                            <div class="row-text">
+                                <div class="text-left">
+                                    <a href="#" rel="nofollow">Линка слева</a>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#" rel="nofollow">Авторизация</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/jquery-2.2.0.min.js"></script>
+    <script src="/static/js/jquery-ui.js"></script>
+    <script src="/static/js/jquery.main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 52px;
+}
+
+.page-nav a.page-nav__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #b9b8b8;
+  color: #000;
+  font-size: 16px;
+  line-height: 29px;
+  padding: 0 5px;
+  margin: 5px 5px;
+  min-width: 33px;
+  text-align: center;
+  text-decoration: none;
+
+
+  &:hover {
+    background: #e4a547;
+    border-color: #e4a547;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &--active {
+    background: #e4a547;
+    border-color: #e4a547;
+    color: #000;
+    font-weight: bold;
+
+  }
+
+  &--prev {
+    font-size: 0;
+    height: 33px;
+    min-width: 33px;
+
+    &::after {
+      position: absolute;
+      content: '\f104';
+      font-family: 'FontAwesome';
+      font-size: 16px;
+      line-height: 29px;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #5d5c5c;
+    }
+  }
+
+  &--next {
+    font-size: 0;
+    height: 33px;
+    min-width: 33px;
+
+    &::after {
+      position: absolute;
+      content: '\f105';
+      font-family: 'FontAwesome';
+      font-size: 16px;
+      line-height: 29px;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #5d5c5c;
+    }
+  }
+}
+
+.catalog-section .page-nav {
+  padding-bottom: 0;
+}
+
+.page-nav .page-nav__item.page-nav__item--dots {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  vertical-align: top;
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0;
+  margin: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+}

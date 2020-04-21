@@ -1,0 +1,158 @@
+.search-title-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.search-title {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-right: 50px;
+  min-width: 318px;
+}
+
+.search-filters__title {
+  font-size: 16px;
+  font-weight: 700;
+  display: inline;
+  margin-right: 10px;
+}
+
+.search-filters__result-list a {
+  color: #000;
+  font-weight: 300;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 7px;
+  text-decoration: underline;
+  line-height: 26px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.search-filters__result-list a.active {
+  text-decoration: none;
+}
+
+.search-filters__result-list {
+  display: inline;
+}
+
+.search-filters__request {
+  margin-bottom: 10px;
+}
+
+.search-filters {
+  border-bottom: 1px solid #d4cfc9;
+  flex-grow: 1;
+  padding-bottom: 12px;
+}
+
+.search-page-nav.page-nav {
+  padding: 50px 0 0;
+}
+
+.search-result-section {
+  border-bottom: 1px solid #d4cfc9;
+  padding-bottom: 50px;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.museums-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.museum__item {
+  transition: all .3s;
+  width: 25%;
+  margin-bottom: 0;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.museum__item-wrapper {
+  position: relative;
+  padding: 30px 35px 25px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  border-radius: 5px;
+  border: 1px solid #d4cfc9;
+  background-color: #fff;
+  color: #3c352d;
+  transition: all .3s;
+
+}
+
+.museum__item:hover .museum__item-wrapper {
+  box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.61);
+}
+
+.museum__item-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+  height: auto !important;
+}
+
+.museum__item-img {
+  margin-bottom: 18px;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.museum__item-location {
+  font-size: 15px;
+  color: @yellow-color;
+  padding-top: 12px;
+}
+
+@media all and (max-width: 767px) {
+  .search-title-row {
+    flex-direction: column;
+  }
+
+  .search-title {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .search-filters {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 940px) {
+  .museum__item {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .museum__item {
+    width: 100%;
+  }
+
+  .search-title {
+    font-size: 21px;
+  }
+
+}

@@ -1,0 +1,129 @@
+.search-form {
+  width: 100%;
+  height: 100%;
+}
+
+.search-form .search-box {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8%;
+  height: 75px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+}
+
+
+.search-form-opener {
+  display: block;
+  font-size: 0;
+  line-height: 35px;
+}
+
+.search-form-opener svg {
+  fill: @white-color;
+}
+
+.search-form-opener:hover svg {
+  fill: @yellow-color;
+}
+
+.search-box svg {
+  fill: @yellow-color;
+}
+
+.search-block svg:hover {
+  fill: #31c7f6;
+}
+
+.search-form.active .search-icon svg {
+  fill: #000;
+}
+
+.search-form.active .search-box {
+  display: block !important;
+  transition: width 0.3s linear;
+  background-color: #fff;
+  padding: 0 100px 0 25px;
+  width: 74.2%;
+  top: 0;
+  right: 0;
+  box-shadow: inset 0 0 0 3px #dddad6;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.search-form .search-box  {
+  display: block !important;
+  width: 0;
+  position: absolute;
+  top: auto;
+  right: 9999px;
+  -webkit-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+  z-index: 5;
+}
+
+.search-form.active input[type='search'] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #343433;
+  font-size: 18px;
+  line-height: 20px;
+  height: 100%;
+}
+
+.search-form ::-webkit-input-placeholder {color:#343433;}
+.search-form ::-moz-placeholder          {color:#343433;}/* Firefox 19+ */
+.search-form :-moz-placeholder           {color:#343433;}/* Firefox 18- */
+.search-form :-ms-input-placeholder      {color:#343433;}
+
+
+.search-form :focus::-webkit-input-placeholder {color: transparent}
+.search-form :focus::-moz-placeholder          {color: transparent}
+.search-form :focus:-moz-placeholder           {color: transparent}
+.search-form :focus:-ms-input-placeholder      {color: transparent}
+
+
+.search-block--mobile {
+  display: none;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .main-nav__item--search {
+    position: relative;
+  }
+
+  .search-form.active .search-box {
+    width: 504%;
+  }
+
+  .main-nav__item--search a.search-form-opener {
+    font-size: 17px;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #343433;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .main-nav__item--search a.search-form-opener svg {
+    fill: #343433;
+  }
+
+  .search-icon {
+    width: 12%;
+    height: 100%;
+  }
+
+}

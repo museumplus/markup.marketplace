@@ -1,0 +1,42 @@
+{
+  "name": "SPLAT",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ArtDesign",
+  "devDependencies": {
+    "autoprefixer": "6.5.3",
+    "autoprefixer-core": "^6.0.1",
+    "css-mqpacker": "^5.0.1",
+    "grunt": "1.0.1",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "1.4.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-css-mqpacker": "^3.0.1",
+    "grunt-csso": "^2.1.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-svgmin": "^4.0.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "start": "npm run build && grunt serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
+  ],
+  "engines": {
+    "node": "7.10.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

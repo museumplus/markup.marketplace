@@ -1,0 +1,273 @@
+.souvenirs-slide-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.souvenirs-catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 75%;
+  min-width: 75%;
+  max-width: 75%;
+}
+
+.souvenirs-catalog-list .catalog__item {
+  width: 33.3%;
+  min-width: 33.3%;
+  max-width: 33.3%;
+}
+
+
+.souvenirs-exhibition-box {
+  width: 25%;
+  min-width: 25%;
+  max-width: 25%;
+}
+
+.souvenirs-exhibition-box__wrapper {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.souvenirs-exhibition__img {
+  font-size: 0;
+  margin-bottom: 7px;
+}
+
+.souvenirs-exhibition__img-title {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.souvenirs-exhibition__img img {
+  width: 100%;
+}
+
+.souvenirs-exhibition__category {
+  font-size: 12px;
+  color: #be9b70;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.souvenirs-exhibition__title {
+  font-size: 23px;
+  font-weight: 700;
+  color: #3c352d;
+  line-height: 25px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.souvenirs-exhibition__date {
+  font-size: 15px;
+  line-height: 15px;
+  color: #3c352d;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.souvenirs-exhibition__address {
+  font-size: 15px;
+  font-weight: 300;
+  color: #3c352d;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+
+.souvenirs-exhibition__address a {
+  color: #3c352d;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.souvenirs-exhibition__btn-row {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.souvenirs-link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #e4a547;
+  font-weight: bold;
+
+  &:hover {
+    color: #a3732b;
+  }
+}
+
+.souvenirs-arrow {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0;
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  height: 22px;
+  background-image: url('../img/arrow.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}
+
+.souvenirs-slides .souvenirs-slide {
+  display: none;
+  padding: 5px 0 60px;
+
+  &:first-child {
+    display: block;
+  }
+}
+
+.souvenirs-slides.slick-slider .souvenirs-slide {
+  display: block;
+}
+
+@media all and (min-width: 940px) and (max-width: 1280px) {
+  .souvenirs-catalog-list .catalog__item {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .souvenirs-exhibition-box {
+    width: 33.33%;
+    min-width: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .souvenirs-catalog-list {
+    width: 66.67%;
+    min-width: 66.67%;
+    max-width: 66.67%;
+  }
+
+  .souvenirs-exhibition-box__wrapper {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+
+@media all and (max-width: 939px) {
+  .souvenirs-slide-holder {
+    flex-direction: column;
+  }
+
+
+  .souvenirs-exhibition-box {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .souvenirs-catalog-list {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .souvenirs-exhibition-box__wrapper {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .souvenirs-exhibition__title {
+    font-size: 25px;
+  }
+
+  .souvenirs-exhibition__date {
+    font-size: 17px;
+  }
+
+  .souvenirs-exhibition__address {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .information__title.section-title:first-child {
+    margin-top: 0;
+  }
+}
+
+
+@media all and (min-width: 640px) and (max-width: 939px) {
+  .souvenirs-catalog-list .catalog__item {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .souvenirs-exhibition__category {
+    font-size: 15px;
+  }
+
+  .souvenirs-exhibition__img-title {
+    font-size: 17px;
+    line-height: 19px;
+    padding-top: 5px;
+  }
+}
+
+
+@media all and (max-width: 1640px) {
+  .souvenirs-section{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media all and (max-width: 639px) {
+  .souvenirs-catalog-list .catalog__item {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    &:last-child {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
