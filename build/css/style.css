@@ -395,42 +395,49 @@ template {
   font-weight: normal;
   font-style: normal;
   src: local('FontAwesome'), url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome/FontAwesome.otf') format('opentype'), url('../fonts/fontawesome/fontawesome-webfont.svg#alsrubl') format('svg');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Circe';
   font-weight: 400;
   font-style: normal;
   src: local('Circe'), local('Circe-Regular'), url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Regular.woff') format('woff'), url('../fonts/Circe-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Circe';
   font-weight: 200;
   font-style: normal;
   src: local('Circe ExtraLight'), local('Circe-ExtraLight'), url('../fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-ExtraLight.woff') format('woff'), url('../fonts/Circe-ExtraLight.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Circe';
   font-weight: 100;
   font-style: normal;
   src: local('Circe Thin'), local('Circe-Thin'), url('../fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Thin.woff') format('woff'), url('../fonts/Circe-Thin.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Circe';
   font-weight: 300;
   font-style: normal;
   src: local('Circe Light'), local('Circe-Light'), url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Light.woff') format('woff'), url('../fonts/Circe-Light.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Circe';
   font-weight: 700;
   font-style: normal;
   src: local('Circe Bold'), local('Circe-Bold'), url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Bold.woff') format('woff'), url('../fonts/Circe-Bold.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Circe';
   font-weight: 800;
   font-style: normal;
   src: local('Circe ExtraBold'), local('Circe-ExtraBold'), url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-ExtraBold.woff') format('woff'), url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'ElegantIcons';
@@ -438,6 +445,7 @@ template {
   src: url('../fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../fonts/ElegantIcons.woff') format('woff'), url('../fonts/ElegantIcons.ttf') format('truetype'), url('../fonts/ElegantIcons.svg#ElegantIcons') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 html {
   height: 100%;
@@ -703,6 +711,7 @@ a.btn.more-btn:hover {
  */
 @font-face {
   font-family: 'FontAwesome';
+  font-display: swap;
   src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
   src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;

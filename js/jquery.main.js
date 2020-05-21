@@ -570,12 +570,6 @@ function initSameHeight() {
         multiLine: true
     });
 
-    jQuery('.main-slider__slides').sameHeight({
-        elements: '.main-slider__description',
-        flexible: true,
-        multiLine: true
-    });
-
     jQuery('.products-list').sameHeight({
         elements: '.catalog__item',
         flexible: true,
