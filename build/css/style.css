@@ -13332,7 +13332,7 @@ th {
   background: #fff;
   width: 500px;
   max-height: 100%;
-  padding: 20px 50px 50px;
+  padding: 50px 50px 50px;
   z-index: 2;
 }
 .magnet-popup .magnet-popup__content-wrapper .magnet-popup__close-button {
@@ -13396,19 +13396,20 @@ th {
   max-width: 80%;
   height: auto;
 }
-.magnet-popup__form {
-  padding-top: 20px;
+.magnet-popup__form--hide {
+  display: none;
 }
 .magnet-popup__form-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
 }
 .magnet-popup__form-field input {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   width: 100%;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 16px;
   font-family: 'Circe', Arial, sans-serif;
@@ -13416,6 +13417,7 @@ th {
   border: 1px solid #c4c2c2;
 }
 .magnet-popup__form-field button {
+  width: 100%;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
@@ -13427,6 +13429,16 @@ th {
   outline: none;
   border: none;
   box-shadow: none;
+}
+.magnet-popup__form-small-text {
+  width: 100%;
+  margin-top: 5px;
+}
+.magnet-popup__success-text {
+  display: none;
+}
+.magnet-popup__success-text--visible {
+  display: block;
 }
 @media all and (min-width: 370px) and (max-width: 599px){
   .sections-item{
@@ -13825,6 +13837,22 @@ th {
 @media all and (min-width: 768px) and (max-width: 939px){
   .personal-field-item{
     width: 90%;
+  }
+}
+@media screen and (min-width: 768px){
+  .magnet-popup__form-field{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .magnet-popup__form-field input{
+    width: 70%;
+    margin: 0;
+  }
+  .magnet-popup__form-field button{
+    width: 30%;
   }
 }
 @media all and (min-width: 900px) and (max-width: 1023px){

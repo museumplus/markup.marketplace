@@ -30,7 +30,7 @@
     background: #fff;
     width: 500px;
     max-height: 100%;
-    padding: 20px 50px 50px;
+    padding: 50px 50px 50px;
     z-index: 2;
 
     .magnet-popup__close-button {
@@ -99,15 +99,20 @@
 }
 
 .magnet-popup__form {
-  padding-top: 20px;
+
+  &--hide {
+    display: none;
+  }
 }
 
 .magnet-popup__form-field {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
 
   input {
-    flex-grow: 1;
     width: 100%;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 16px;
     font-family: 'Circe', Arial, sans-serif;
@@ -116,6 +121,7 @@
   }
 
   button {
+    width: 100%;
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
@@ -127,5 +133,35 @@
     outline: none;
     border: none;
     box-shadow: none;
+  }
+}
+
+.magnet-popup__form-small-text {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.magnet-popup__success-text {
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .magnet-popup__form-field {
+    display: flex;
+    flex-wrap: wrap;
+
+    input {
+      width: 70%;
+      margin: 0;
+    }
+
+    button {
+      width: 30%;
+    }
   }
 }
