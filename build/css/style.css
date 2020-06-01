@@ -13382,10 +13382,8 @@ th {
           transform: rotate(-45deg);
   background-color: #000;
 }
-.magnet-popup .magnet-popup__content {
-  min-height: 100px;
-  max-height: 70vh;
-  overflow-y: scroll;
+.magnet-popup .magnet-popup__content a {
+  color: #e4a547;
 }
 .magnet-popup .magnet-popup__content p {
   font-size: 18px;
