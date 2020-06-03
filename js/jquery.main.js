@@ -1,29 +1,3 @@
-(function (document, window) {
-  //selectors
-  var popupElement = document.querySelector(".magnet-popup");
-  var closeButton = document.querySelector(".magnet-popup__close-button");
-
-  if (popupElement) {
-    window.popup = {
-      open: function open() {
-        popupElement.classList.remove("magnet-popup--hidden");
-      },
-      close: function close() {
-        popupElement.classList.add("magnet-popup--hidden");
-      },
-    };
-    setTimeout(function () {
-      popup.open();
-    }, 5000);
-  }
-
-  if (closeButton) {
-    closeButton.addEventListener("click", function () {
-      popup.close();
-    });
-  }
-})(document, window);
-
 jQuery(function () {
   initLazyHover();
   initDropDownClasses();
