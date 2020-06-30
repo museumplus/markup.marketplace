@@ -1,0 +1,9 @@
+{
+  "name": "mplus/markup.marketplace",
+  "description": "Вёрстка для музей-маркетплейс",
+  "license": "Commerce",
+  "type": "bitrix-theme",
+  "require": {
+    "composer/installers": "~1"
+  }
+}
