@@ -2,11 +2,13 @@
   padding: 0 20px;
 }
 
-.information__column h3, .information__column p {
+.information__column h3,
+.information__column p {
   color: #3c352d;
 }
 
-.information__column h3, .information__list-item h3 {
+.information__column h3,
+.information__list-item h3 {
   margin-top: -5px;
   font-size: 23px;
   line-height: 33px;
@@ -35,7 +37,8 @@
   color: #fff;
 }
 
-.information__cards-item img, .information__cards-item::before {
+.information__cards-item img,
+.information__cards-item::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -68,7 +71,8 @@
   background-color: rgba(107, 100, 92, .5);
 }
 
-.information__cards-item p, .information__cards-item span {
+.information__cards-item p,
+.information__cards-item span {
   position: relative;
   z-index: 3;
 }
@@ -94,7 +98,8 @@
   border-color: transparent;
 }
 
-.information__cards-item--nobg::before, .information__cards-item--nobg:hover::before {
+.information__cards-item--nobg::before,
+.information__cards-item--nobg:hover::before {
   background-color: transparent
 }
 
@@ -153,7 +158,8 @@
   border-color: transparent;
 }
 
-.information__list-item--registration a, .information__subscribe button {
+.information__list-item--registration a,
+.information__subscribe button {
   font-size: 23px;
   line-height: 32px;
   font-weight: 700;
@@ -233,6 +239,10 @@
   width: 70%;
 }
 
+.information__subscribe+span {
+  margin-top: 10px !important;
+}
+
 .social {
   margin: 0;
   padding: 0;
@@ -251,7 +261,8 @@
   background-color: #746f69
 }
 
-.social__item, .social__item a {
+.social__item,
+.social__item a {
   display: flex;
   justify-content: center;
   align-items: center
@@ -298,7 +309,9 @@
   width: 50%
 }
 
-.information__column h3, .information__column p, .information__column--wide {
+.information__column h3,
+.information__column p,
+.information__column--wide {
   width: 100%
 }
 
@@ -367,7 +380,8 @@
   justify-content: flex-start
 }
 
-.social--darken, .social__item {
+.social--darken,
+.social__item {
   justify-content: center
 }
 
@@ -442,6 +456,7 @@
     }
   }
 }
+
 @media all and (max-width: 1280px) {
   .information__cards-item {
     width: 100%;
@@ -482,6 +497,7 @@
       font-size: 25px;
     }
   }
+
   .information__subscribe span {
     font-size: 16px;
     width: 80%;

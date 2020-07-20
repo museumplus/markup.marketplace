@@ -7,18 +7,18 @@
     "autoprefixer": "6.5.3",
     "autoprefixer-core": "^6.0.1",
     "css-mqpacker": "^5.0.1",
-    "grunt": "1.0.1",
+    "grunt": "^1.2.1",
     "grunt-browser-sync": "2.2.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-less": "1.4.0",
-    "grunt-contrib-watch": "1.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-css-mqpacker": "^3.0.1",
     "grunt-csso": "^2.1.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-svgmin": "^4.0.0",
-    "grunt-svgstore": "^1.0.0",
+    "grunt-svgmin": "^6.0.0",
+    "grunt-svgstore": "^2.0.0",
     "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
@@ -37,6 +37,6 @@
     "node": "7.10.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.5.1"
   }
 }
