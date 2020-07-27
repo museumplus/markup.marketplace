@@ -3468,6 +3468,7 @@ a.btn.more-btn:hover {
 .fancybox-lock .fancybox-overlay {
   overflow: auto;
   overflow-y: scroll;
+  background: rgba(29, 29, 29, 0.7);
 }
 /* Title helper */
 .fancybox-title {
@@ -8643,7 +8644,7 @@ th {
   display: block;
   width: 30px;
   min-height: 20px;
-  margin-right: 0!important;
+  margin-right: 0 !important;
   position: absolute;
   top: 0;
   right: 0;
@@ -8842,13 +8843,17 @@ th {
 }
 .main-nav__promo .main-nav__promo-item-title {
   position: absolute;
-  bottom: 30px;
-  left: 35px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 35px 15px;
+  background-color: rgba(51, 51, 51, 0.5);
   color: #ffffff;
   text-transform: none;
   font-size: 24px;
   line-height: 25px;
   font-weight: normal;
+  text-align: left;
 }
 .main-nav__promo .main-nav__promo-item-title:hover {
   color: #ffffff;
@@ -9152,6 +9157,7 @@ th {
           align-items: center;
   padding: 9px 7px 7px;
   text-decoration: none;
+  cursor: pointer;
 }
 .catalog__item-btn--not-available {
   background-color: #e4a547;
@@ -10676,6 +10682,7 @@ th {
   font-size: 16px;
   color: #000;
   text-decoration: underline;
+  cursor: pointer;
 }
 .filter-reset-btn:hover {
   text-decoration: none;
@@ -10740,6 +10747,7 @@ th {
   background-color: #e4a547;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .filter-submit-row {
   padding-top: 10px;
@@ -12826,7 +12834,16 @@ th {
   text-decoration: none;
 }
 .section-item__img {
-  display: block;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   font-size: 0;
   margin-bottom: 10px;
