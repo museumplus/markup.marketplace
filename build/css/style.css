@@ -12573,6 +12573,7 @@ th {
 }
 .museum__item:hover .museum__item-wrapper {
   box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.61);
+  z-index: 1;
 }
 .museum__item-img img {
   max-width: 100%;
