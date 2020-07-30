@@ -12215,6 +12215,7 @@ th {
 }
 .exhibition__item:hover .exhibition__item-wrapper {
   box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.61);
+  z-index: 2;
 }
 .exhibition__item-img img {
   width: 100%;
@@ -14402,7 +14403,12 @@ th {
     position: static;
   }
   .main-header{
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
   }
   .main-nav__item{
     width: 19.84%;
@@ -14426,9 +14432,6 @@ th {
   .main-nav__toggle.main-nav__toggle--tablet{
     display: block;
     margin-left: 0;
-    position: absolute;
-    right: 20px;
-    top: 18px;
   }
   .main-header__language{
     position: absolute;
