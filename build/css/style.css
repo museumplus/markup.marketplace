@@ -9074,7 +9074,7 @@ th {
   background-color: #fff;
   color: #3c352d;
   transition: all 0.3s;
-  min-height: 500px;
+  min-height: 100%;
 }
 .catalog__item-category {
   position: relative;
@@ -12966,6 +12966,9 @@ th {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .personal-info {
   width: 50%;
@@ -13277,18 +13280,16 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .personal-info {
-  width: 80%;
-}
-.form__data-left {
-  width: 45%;
+  width: 50%;
 }
 .form__data-left .submit-group {
   display: none;
-}
-.form__data-right {
-  width: 45%;
 }
 .personal-info .social-icons {
   padding: 0;
@@ -13569,6 +13570,36 @@ th {
 .bx-authform-formgroup-container .btn:focus {
   opacity: 0.7;
   cursor: pointer;
+}
+.bx-authform-formgroup-container .checkbox span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #959595;
+  cursor: pointer;
+}
+.bx-authform-formgroup-container .checkbox input:checked + span::before {
+  border-color: #e3a447;
+}
+.bx-authform-formgroup-container .checkbox input:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #e3a447;
 }
 span.bx-authform-starrequired {
   color: #d93333;
@@ -15335,6 +15366,9 @@ span.bx-authform-starrequired {
   .page__cabinet .row__holder{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .personal-info{
     width: 100%;
