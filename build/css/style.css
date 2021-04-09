@@ -705,6 +705,244 @@ a.btn.more-btn:hover {
 #basket-root .basket-coupon-block-field-description {
   padding-bottom: 10px;
 }
+.bx_my_order_cancel input[type="submit"] {
+  border-width: 3px;
+  background: #f9b34a;
+  border-color: #f9b34a;
+  z-index: 2;
+  display: inline-block;
+  padding: 7px 20px;
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 18px;
+  cursor: pointer;
+  text-shadow: none;
+  border-radius: 0;
+}
+.sale-order-link,
+.sale-order-history-link {
+  color: #e4a547;
+  padding-top: 20px;
+  text-shadow: none;
+}
+.sale-order-link:hover,
+.sale-order-history-link:hover {
+  color: #000;
+}
+.sale-order-list-shipment-button,
+.sale-order-list-repeat-link,
+.sale-order-list-cancel-link,
+.sale-order-list-about-link,
+.sale-order-list-change-payment {
+  color: #e4a547;
+  text-shadow: none;
+}
+.sale-order-list-shipment-button:hover,
+.sale-order-list-repeat-link:hover,
+.sale-order-list-cancel-link:hover,
+.sale-order-list-about-link:hover,
+.sale-order-list-change-payment:hover {
+  color: #000;
+}
+.tabs-container + h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sale-order-list-button,
+.sale-order-detail-about-order-inner-container-repeat-button,
+.sale-order-detail-payment-options-methods-button-element,
+.sale-order-detail-payment-options-methods-button-element-new-window {
+  display: block;
+  padding: 6px 17px;
+  float: right;
+  max-width: 200px;
+  border-radius: 0;
+  height: 38px;
+  background: #f9b34a;
+  color: #000;
+  font: 18px "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.sale-order-list-button:hover,
+.sale-order-detail-about-order-inner-container-repeat-button:hover,
+.sale-order-detail-payment-options-methods-button-element:hover,
+.sale-order-detail-payment-options-methods-button-element-new-window:hover {
+  background: #f9b34a;
+  opacity: 0.8;
+  text-decoration: none;
+  color: #000;
+}
+.sale-order-list-title-container,
+.sale-order-detail-general-head {
+  background: #e4a547;
+}
+.sale-order-detail-general-item {
+  color: #000;
+}
+.sale-order-detail-general {
+  border-color: #e4a547;
+}
+.sale-order-detail-about-order-inner-container-repeat-button {
+  width: 100%;
+  max-width: unset;
+  margin-bottom: 10px;
+}
+.sale-order-detail-payment-options-methods-button-element,
+.sale-order-detail-payment-options-methods-button-element-new-window {
+  width: 100%;
+  max-width: unset;
+}
+.sale-order-detail-payment-options-methods-button-element:hover,
+.sale-order-detail-payment-options-methods-button-element-new-window:hover {
+  background: #f9b34a;
+  opacity: 0.8;
+  text-decoration: none;
+  color: #000;
+}
+.sale-order-detail-order-item-title {
+  color: #000;
+}
+.sale-order-detail-order-item-title a {
+  color: inherit;
+}
+.sale-order-detail-order-item-title a:hover {
+  color: #f9b34a;
+}
+.sale-order-detail-about-order-inner-container-name-read-less,
+.sale-order-detail-about-order-inner-container-name-read-more,
+.sale-order-list-cancel-payment {
+  border-bottom: 1px dashed #f9b34a;
+}
+.sale-order-detail-about-order-inner-container-name-read-less:hover,
+.sale-order-detail-about-order-inner-container-name-read-more:hover,
+.sale-order-list-cancel-payment:hover {
+  color: #000;
+}
+.sale-order-detail-about-order-inner-container-details {
+  padding-left: 0;
+  padding-right: 0;
+}
+.sale-order-detail-about-order-inner-container-name-read-less:after,
+.sale-order-detail-about-order-inner-container-name-read-more:after,
+.sale-order-detail-payment-options-methods-info-change-link:after,
+.sale-order-detail-show-link:after,
+.sale-order-detail-hide-link:after {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: transparent;
+  border: none;
+  border-bottom-color: transparent;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: rgba(249, 179, 74, 0.008);
+}
+.sale-order-list-cancel-payment {
+  padding-bottom: 10px;
+}
+.sale_order_full_table {
+  text-align: left;
+}
+.sale_order_full_table td {
+  font-size: 20px;
+  line-height: 22px;
+}
+.sale_order_full_table .btn-success {
+  margin: 20px 0;
+  color: #fff;
+  background-color: #f9b34a;
+  border-color: #f9b34a;
+  border-radius: 0 !important;
+}
+.sale_order_full_table .ps_logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sale_order_full_table a {
+  color: #f9b34a;
+}
+.ps_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  border-bottom: 0;
+}
+.ps_logo img {
+  width: auto;
+  max-width: 200px;
+  margin: 0 20px;
+}
+.ps_logo br {
+  display: none;
+}
+.sp-form-fields-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Circe', Arial, sans-serif;
+}
+.sp-form .sp-lg .sp-field .sp-button {
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #e4a547;
+  transition: all 0.3s;
+  position: relative;
+  padding-left: 5px;
+  border-color: transparent;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+  width: 31%;
+}
+.sp-form .sp-field > div[style] > p {
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 1.3;
+  color: #3c352d;
+}
+.sp-field input[type=email] {
+  width: 375px !important;
+}
+.sp-form .sp-lg .sp-field .sp-button {
+  font-size: 19px;
+  line-height: 23px !important;
+  padding-left: 21px;
+  padding-right: 21px;
+  display: inline-block;
+  width: 200px;
+  height: auto !important;
+  white-space: normal;
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 700;
+}
+.sp-link-wrapper.sp-brandname__left {
+  display: none !important;
+}
+.sp-form .sp-field input[type=checkbox] + span,
+.sp-form .sp-field input[type=radio] + span {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 300 !important;
+  font-family: 'Circe', Arial, sans-serif;
+}
+.information__list-item .sp-form {
+  font-family: 'Circe', Arial, sans-serif;
+}
+.information__list-item .sp-form .sp-field {
+  padding: 5px 0;
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -11731,6 +11969,7 @@ th {
 }
 .product-card__img .event-img {
   max-width: 100%;
+  height: auto;
 }
 .product-card__img--event {
   display: -webkit-box;
@@ -13310,6 +13549,9 @@ th {
 .btn-yellow:hover,
 .btn-yellow:focus {
   opacity: 0.7;
+}
+.page__cabinet .container {
+  width: 100%;
 }
 .products-catalog-section.events-museum .events-list {
   padding-top: 0;
