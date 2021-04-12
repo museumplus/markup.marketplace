@@ -113,7 +113,8 @@
 .catalog__item-btn-row {
   position: relative;
   z-index: 2;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .catalog__item-btn svg {
@@ -129,6 +130,21 @@
 
 .catalog__item:hover .catalog__item-btn-row {
   display: block;
+  opacity: 1;
+  display: block;
+
+  .catalog__item-btn {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .catalog__item-btn:hover {
+    background-color: darken(#95be70, 5%);
+  }
+
+
+  .catalog__item-btn--not-available:hover {
+    background-color: darken(#e4a547, 5%);
+  }
 }
 
 .catalog__item:hover {
@@ -137,17 +153,17 @@
 
 
 .catalog__item:hover .catalog__item-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
   z-index: 4;
   box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.61);
 }
 
-.catalog__item--simple:hover .catalog__item-wrapper {
-  height: auto !important;
-}
+// .catalog__item--simple:hover .catalog__item-wrapper {
+//   height: auto !important;
+// }
 
 .catalog__item-top {
   display: flex;
@@ -257,6 +273,12 @@
 
   .catalog__item-img {
     height: 200px;
+  }
+}
+
+@media all and (max-width: 939px) {
+  .catalog__item-btn-row {
+    opacity: 1;
   }
 }
 

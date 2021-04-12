@@ -9409,7 +9409,8 @@ th {
 .catalog__item-btn-row {
   position: relative;
   z-index: 2;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 .catalog__item-btn svg {
   fill: #fff;
@@ -9425,21 +9426,24 @@ th {
   margin-top: -5px;
 }
 .catalog__item:hover .catalog__item-btn-row {
+  opacity: 1;
   display: block;
+}
+.catalog__item:hover .catalog__item-btn-row .catalog__item-btn {
+  transition: all 0.3s ease-in-out;
+}
+.catalog__item:hover .catalog__item-btn-row .catalog__item-btn:hover {
+  background-color: #88b65e;
+}
+.catalog__item:hover .catalog__item-btn-row .catalog__item-btn--not-available:hover {
+  background-color: #e19a31;
 }
 .catalog__item:hover {
   position: relative;
 }
 .catalog__item:hover .catalog__item-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 4;
   box-shadow: 0 0 17px -5px rgba(0, 0, 0, 0.61);
-}
-.catalog__item--simple:hover .catalog__item-wrapper {
-  height: auto !important;
 }
 .catalog__item-top {
   display: -webkit-box;
@@ -15103,83 +15107,10 @@ span.bx-authform-starrequired {
     height: 200px;
   }
 }
-@media all and (max-width: 1280px){
-  .information__cards-item{
-    width: 100%;
-    min-width: 100%;
-  }
-  .information__cards-item--nobg{
-    min-height: 120px;
-    height: auto;
-  }
-  .product-card__delivery-block{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .product-card__delivery{
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    padding-right: 0;
-    padding-bottom: 20px;
-  }
-  .product-card__delivery-icons{
-    width: 100%;
-  }
-}
-@media all and (max-width: 730px){
-  .information__list-item{
-    width: 100%;
-    min-height: 100px;
-    padding: 20px;
-  }
-  .information__subscribe span{
-    font-size: 16px;
-    width: 100%;
-    padding-top: 7px;
-  }
-}
-@media all and (max-width: 519px){
-  .information__subscribe button{
-    font-size: 0;
-    height: 40px;
-    background-color: #e3a447;
-  }
-  .information__subscribe button::before{
-    color: #fff;
-    font-size: 30px;
-    top: 50%;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    margin-top: -22px;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-  }
-  .information__list-item--registration a{
-    font-size: 20px;
-  }
-  .information__cards-item--nobg .information__cards-partners{
-    font-size: 20px;
-  }
-}
-@media all and (max-width: 340px){
-  .information__cards-item img{
-    min-height: 100%;
-    min-width: 100%;
-  }
-  .information__cards-item{
-    overflow: hidden;
-    padding: 20px;
-  }
-  .information__cards-item p{
-    font-size: 20px;
-  }
-}
 @media all and (max-width: 939px){
+  .catalog__item-btn-row{
+    opacity: 1;
+  }
   .souvenirs-slide-holder{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15267,6 +15198,82 @@ span.bx-authform-starrequired {
   }
   .sitemap .sitemap-section ul > li ul{
     display: inline-block;
+  }
+}
+@media all and (max-width: 1280px){
+  .information__cards-item{
+    width: 100%;
+    min-width: 100%;
+  }
+  .information__cards-item--nobg{
+    min-height: 120px;
+    height: auto;
+  }
+  .product-card__delivery-block{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .product-card__delivery{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .product-card__delivery-icons{
+    width: 100%;
+  }
+}
+@media all and (max-width: 730px){
+  .information__list-item{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+  }
+  .information__subscribe span{
+    font-size: 16px;
+    width: 100%;
+    padding-top: 7px;
+  }
+}
+@media all and (max-width: 519px){
+  .information__subscribe button{
+    font-size: 0;
+    height: 40px;
+    background-color: #e3a447;
+  }
+  .information__subscribe button::before{
+    color: #fff;
+    font-size: 30px;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -22px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+  }
+  .information__list-item--registration a{
+    font-size: 20px;
+  }
+  .information__cards-item--nobg .information__cards-partners{
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 340px){
+  .information__cards-item img{
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .information__cards-item{
+    overflow: hidden;
+    padding: 20px;
+  }
+  .information__cards-item p{
+    font-size: 20px;
   }
 }
 @media all and (max-width: 1199px){
